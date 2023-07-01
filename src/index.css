@@ -45,7 +45,7 @@ section {
 }
 
 section:nth-child(even) {
-  background: var(--color-white)1;
+  background: var(--color-white);
 }
 
 section>h2 {
@@ -58,7 +58,7 @@ section>p {
 }
 
 a {
-  color: var(--color-white);
+
   transition: var(--transition);
 }
 
