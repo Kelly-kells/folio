@@ -7,6 +7,31 @@
     }
   }
 
- /* .header-section img {
+ /* .header-profile img {
     animation: rotate 4s linear infinite;
-  }*/
+ }*/
+
+  header{
+    place-items: center;
+    transition: var(--transition);
+    margin-top: 5rem;
+  }
+  .header-container{
+    
+   
+    align-items: center;
+  justify-content: center;
+  gap: 200px;
+  
+  }
+  
+ .header-profile{
+  width: 20rem;
+  height: 22rem;
+  
+ }
+ 
+ .header-contents h3{
+  font-size: 2rem;
+ }
+

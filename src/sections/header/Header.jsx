@@ -6,20 +6,28 @@ const Header = () => {
   return (
     <header id='header'>
       <div className="container header-container">
-        <div className="header-section">
+        <div className="header-profile">
           <img src={headerImg} alt="header-picture" />
         </div>
-        <h3>FAVOUR KELECHI</h3>
+        <div className='header-contents'>
+          <h3>FAVOUR KELECHI</h3>
 
-        <p> Creating web interfaces that adapt and function seamlessly across multiple devices and screen sizes, ensuring an optimal user experience.</p>
-        <div className="header-cta">
-          <a href="#contact">Let's talk</a>
-          <a href="#portfolio">My work</a>
+          <p> An experienced frontend developr that is Committed to creating an accessible web, ensuring all developed features comply with industry standards and web accessibility guidelines.Creating web interfaces that adapt and function seamlessly across multiple devices and screen sizes, ensuring an optimal user experience.</p>
+          <div className="header-cta">
+            <a href="#contact">Let's talk</a>
+            <a href="#portfolio">My work</a>
+          </div>
+
+
+          <div className="header-socials">
+            {
+              data.map(item => <a key={item.id} href={item.link} target='_blank' rel='noopener noreferer'>{item.icon}</a>)
+            }
+
+          </div>
         </div>
 
-        <div className="header-socials">
 
-        </div>
       </div>
 
     </header>
