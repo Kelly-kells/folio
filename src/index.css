@@ -88,27 +88,34 @@ img {
   padding: 0.6rem 2.5rem;
   border: 2px solid transparent;
   border-radius: var(--border-radius-2);
+  background: var(--color-light);
   cursor: pointer;
 }
 
-.btn-white {
-  background: var(--color-white);
+.btn.white {
+  background: var(--color-light);
+  color: #7400b8;
+  transform: scale(1);
 }
 
 .btn.white:hover {
   background: transparent;
-  border-color: var(--color-white);
+  border-color: var(--color-primary);
+  transition: var(--transition);
+  transform: scale(1.1);
 }
 
-.btn-primary {
+.btn.primary {
   background: var(--color-primary);
   color: white;
+  transform: scale(1);
 }
 
-.btn-primary:hover {
+.btn.primary:hover {
   background: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
+  transform: scale(1.1);
 
 }
 
