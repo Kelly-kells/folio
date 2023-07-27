@@ -33,6 +33,7 @@ gap: 3.5rem;
 
 .nav-menu li{
     transition: var(--transition);
+    font-weight: 700;
 }
 
 .nav-menu li:hover{

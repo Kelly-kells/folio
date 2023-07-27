@@ -14,7 +14,7 @@
   --border-radius-2: 0.8rem;
   --border-radius-3: 0.5rem;
   --transition: all 500ms ease;
-  --color-light: #f8f9fa;
+  --color-light: #ece0f5;
   --color-white: #ffff;
   --color-black: #0000;
   --color-primary: #7400b8;
@@ -95,7 +95,7 @@ img {
 .btn.white {
   background: var(--color-light);
   color: #7400b8;
-  transform: scale(1);
+ 
 }
 
 .btn.white:hover {
@@ -108,7 +108,7 @@ img {
 .btn.primary {
   background: var(--color-primary);
   color: white;
-  transform: scale(1);
+  
 }
 
 .btn.primary:hover {
