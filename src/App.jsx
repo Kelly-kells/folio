@@ -2,7 +2,7 @@
 import React from 'react'
 import Navbar from "./sections/navbar/Navbar"
 import Header from "./sections/header/Header"
-import About from "./sections/about/About"
+
 import Services from "./sections/services/Services"
 import Folio from './sections/portfolio/Folio'
 import Contact from "./sections/contact/Contact"
@@ -15,7 +15,7 @@ const App = () => {
     <main>
       <Navbar/>
       <Header/>
-      <About/>
+      
       <Services/>
       <Folio/>
       <Contact/>
