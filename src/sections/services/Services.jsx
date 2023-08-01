@@ -15,7 +15,7 @@ const Services = () => {
              {item.icon}  
            </div>
            <div className="service-details">
-           <h4>{item.title}</h4>
+           <h3>{item.title}</h3>
             <p>{item.desc}</p>
            </div>
            

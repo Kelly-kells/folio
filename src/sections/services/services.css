@@ -17,10 +17,15 @@
     gap: 1rem;
     transition: var(--transition);
 }
+.service-light:hover{
+    transform: scale(1.03);
+}
 
 .service-details{
    padding-left: 1rem;
    padding-right: 1rem;
+   text-align: center;
+   
 }
 .service-icon{
     background: var(--color-primary);
@@ -30,4 +35,34 @@
     transition: var(--transition);
     border-radius: var(--border-radius-3);
     text-align: center;
+}
+.service-light:hover .service-icon{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+}
+h3{
+    margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 1024px){
+
+    .services-container{
+        gap: 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .services-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+
+    .service-details{
+        
+        text-align: center;
+        width: 100%;
+     }
 }
