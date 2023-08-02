@@ -1,17 +1,26 @@
 import React from 'react'
 
-import {AiFillCheckCircle} from "react-icons/ai"
+import {AiFillCheckCircle,AiFillGithub} from "react-icons/ai"
+import {BiLogoTailwindCss, BiLogoJavascript,BiLogoReact} from "react-icons/bi"
+import {BsFiletypeCss} from "react-icons/bs"
+import {SiMui,SiStyledcomponents,SiReactrouter} from "react-icons/si"
+import {TbBrandNextjs} from "react-icons/tb"
+import {DiMaterializecss} from "react-icons/di"
+
 import "./skills.css"
 
 
 const Skills = () => {
   return (
     <section id="skills">
-      <h3>My Skills</h3>
-         <div className="container about-container">
+     
+         <div className="container skills-container">
+         
          <article className='skills'>
-        <div className="service-head">
-          <h3>Styling</h3>
+        <div className="skill-head">
+        <h3>Styling</h3>
+        </div>
+          
           <ul className="skill-list">
                 <li >
               <AiFillCheckCircle className='icons'/>
@@ -19,91 +28,72 @@ const Skills = () => {
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <BiLogoTailwindCss className='icons'/>
+              <p> Tailwind css</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <BsFiletypeCss className='icons'/>
+              <p> CSS</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <SiMui className='icons'/>
+              <p> Material UI</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <SiStyledcomponents className='icons'/>
+              <p> Styled-Components</p>
+             </li>
+             <li >
+              <DiMaterializecss className='icons'/>
+              <p> Materilize-CSS</p>
              </li>
           </ul>
-        </div>
+        
          </article>
 
          <article className='skills'>
-        <div className="service-head">
-          <h3>Styling</h3>
+     
+        <div className="skill-head">
+        <h3>Language/Frameworks/Libs</h3>
+        </div>
+          
           <ul className="skill-list">
                 <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <BiLogoJavascript className='icons'/>
+              <p> Javascript</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <BiLogoReact className='icons'/>
+              <p> React-JS</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <SiReactrouter className='icons'/>
+              <p> React-Router</p>
              </li>
 
              <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <AiFillGithub className='icons'/>
+              <p> Git/Github</p>
              </li>
 
              <li >
+              <TbBrandNextjs className='icons'/>
+              <p> Next-JS</p>
+             </li>
+             <li >
               <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
+              <p> Commerce-Js</p>
              </li>
           </ul>
-        </div>
+        
          </article>
 
-         <article className='skills'>
-        <div className="service-head">
-          <h3>Styling</h3>
-          <ul className="skill-list">
-                <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
-             </li>
-
-             <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
-             </li>
-
-             <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
-             </li>
-
-             <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
-             </li>
-
-             <li >
-              <AiFillCheckCircle className='icons'/>
-              <p> Boostrap</p>
-             </li>
-          </ul>
-        </div>
-         </article>
+         
          </div>
         </section>
   )
