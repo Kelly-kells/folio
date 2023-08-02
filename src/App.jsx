@@ -2,7 +2,7 @@
 import React from 'react'
 import Navbar from "./sections/navbar/Navbar"
 import Header from "./sections/header/Header"
-
+import Skills from "./sections/skills/Skills"
 import Services from "./sections/services/Services"
 import Folio from './sections/portfolio/Folio'
 import Contact from "./sections/contact/Contact"
@@ -17,6 +17,7 @@ const App = () => {
       <Header/>
       
       <Services/>
+      <Skills/>
       <Folio/>
       <Contact/>
       <Footer/>
