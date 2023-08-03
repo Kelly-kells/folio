@@ -13,7 +13,8 @@ import "./skills.css"
 const Skills = () => {
   return (
     <section id="skills">
-     
+     <h2> My SKills</h2>
+      <p>I possess the following skills:</p>
          <div className="container skills-container">
          
          <article className='skills'>
@@ -22,7 +23,8 @@ const Skills = () => {
         </div>
           
           <ul className="skill-list">
-                <li >
+           <div className="skill-flex">
+           <li >
               <AiFillCheckCircle className='icons'/>
               <p> Boostrap</p>
              </li>
@@ -37,10 +39,12 @@ const Skills = () => {
               <p> CSS</p>
              </li>
 
-             <li >
+            <div>
+            <li >
               <SiMui className='icons'/>
               <p> Material UI</p>
              </li>
+             
 
              <li >
               <SiStyledcomponents className='icons'/>
@@ -50,6 +54,12 @@ const Skills = () => {
               <DiMaterializecss className='icons'/>
               <p> Materilize-CSS</p>
              </li>
+            </div>
+
+           </div>
+
+           
+                
           </ul>
         
          </article>
