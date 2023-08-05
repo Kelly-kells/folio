@@ -1,0 +1,11 @@
+
+.folio-image img{
+  width: 30%;
+  object-fit: cover;
+}
+.folio-cta{
+    display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+}
