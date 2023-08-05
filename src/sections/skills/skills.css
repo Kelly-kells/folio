@@ -71,3 +71,10 @@ h2 {
 
 
 }
+
+
+@media screen and (max-width: 600px){
+    .skills-container{
+        gap: 1rem;
+    }
+}
