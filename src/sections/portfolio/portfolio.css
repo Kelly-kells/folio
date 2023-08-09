@@ -1,4 +1,6 @@
-
+.folio-contents{
+  height:500px ;
+}
 
 .folio-image img{
   object-fit: cover;
@@ -8,4 +10,8 @@
   justify-content: center;
   gap: 1.2rem;
   text-align: center;
+}
+.folio-image{
+  width: 50%;
+  height: 50%;
 }

@@ -42,15 +42,19 @@ const Folio = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-             <div className="folio-contents">
+            <div className="swiper-folio">
+            <div className="folio-contents">
               <div className="folio-image">
                <img src={ai} alt="" />
               </div>
-              <div className="folio-cta">
-                <a className="btn white" href="https://github.com/Kelly-kells/fit-fam" target='_blank'>Github</a>
+              
+            </div>
+            <div className="folio-cta">
+                <a className="btn white" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
                 <a className='btn primary' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
               </div>
             </div>
+            
           </SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
