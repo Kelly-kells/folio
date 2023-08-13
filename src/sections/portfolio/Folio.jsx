@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import fit from "../../assets/fit.png"
-import ai from "../../assets/projectai.jpeg" 
+import ai from "../../assets/projectai.jpeg"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -33,86 +33,74 @@ const Folio = () => {
             <div className="folio-contents">
               <div className="folio-image">
                 <img src={fit} alt="" />
-
                 <div className="folio-cta">
-                <a className=" white button" href="https://github.com/Kelly-kells/fit-fam" target='_blank'>Github</a>
-                <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                  <a className=" white button" href="https://github.com/Kelly-kells/fit-fam" target='_blank'>Github</a>
+                  <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                </div>
               </div>
+            </div>
+          </SwiperSlide>
+
+        <SwiperSlide>
+            <div className="swiper-folio">
+              <div className="folio-contents">
+                <div className="folio-image">
+                  <img src={ai} alt="" />
+
+                  <div className="folio-cta">
+                    <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
+                    <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                  </div>
+                </div>
               </div>
-              
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div className="swiper-folio">
-            <div className="folio-contents">
-              <div className="folio-image">
-               <img src={ai} alt="" />
+              <div className="folio-contents">
+                <div className="folio-image">
+                  <img src={ai} alt="" />
 
-               <div className="folio-cta">
-                <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
-              </div> 
+                  <div className="folio-cta">
+                    <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
+                    <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                  </div>
+                </div>
               </div>
-              
             </div>
-            
-            </div>
-            
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="swiper-folio">
-            <div className="folio-contents">
-              <div className="folio-image">
-               <img src={ai} alt="" />
-
-               <div className="folio-cta">
-                <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
-              </div> 
-              </div>
-              
-            </div>
-            
-            </div>
-            
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-folio">
-            <div className="folio-contents">
-              <div className="folio-image">
-               <img src={ai} alt="" />
+              <div className="folio-contents">
+                <div className="folio-image">
+                  <img src={ai} alt="" />
 
-               <div className="folio-cta">
-                <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
-              </div> 
+                  <div className="folio-cta">
+                    <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
+                    <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                  </div>
+                </div>
               </div>
-              
             </div>
-            
-            </div>
-            
+
           </SwiperSlide>
           <SwiperSlide>
             <div className="swiper-folio">
-            <div className="folio-contents">
-              <div className="folio-image">
-               <img src={ai} alt="" />
+              <div className="folio-contents">
+                <div className="folio-image">
+                  <img src={ai} alt="" />
 
-               <div className="folio-cta">
-                <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
-              </div> 
+                  <div className="folio-cta">
+                    <a className=" button" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
+                    <a className=' button' href="https://marchfitness.netlify.app" target='_blank'>Link </a>
+                  </div>
+                </div>
               </div>
-              
             </div>
-            
-            </div>
-            
           </SwiperSlide>
-          
+
         </Swiper>
       </div>
     </section>
