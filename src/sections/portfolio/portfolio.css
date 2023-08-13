@@ -1,17 +1,27 @@
-.folio-contents{
-  height:500px ;
+.swiper{
+  height: 100vh;
 }
 
-.folio-image img{
-  object-fit: cover;
-}
-.folio-cta{
-    display: flex;
+.swiper-slide{
+  display: flex;
   justify-content: center;
-  gap: 1.2rem;
-  text-align: center;
+  align-items: center;
 }
 .folio-image{
-  width: 50%;
-  height: 50%;
+  border: 2px solid purple;
+ width: fit-content;
+  padding: 2rem;
+}
+.folio-image img{
+  display: block;
+  height: 200px;
+  width: 300px;
+}
+.folio-cta{
+  display: flex;
+  width: 100%;
+  justify-content:space-between ;
+}
+.button{
+width: 100px;
 }

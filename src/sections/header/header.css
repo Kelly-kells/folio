@@ -1,16 +1,15 @@
 header {
   transition: var(--transition);
-  margin-top: 5rem;
-
+  margin-top: 8rem;
 }
 
 .header-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
   
 }
-
-
 
 .header-img {
   width: 20rem;
@@ -18,6 +17,7 @@ header {
   margin-top: 2rem;
   border-radius: 9rem 9rem 2rem 2rem;
   background-color: var(--color-primary);
+  text-align: center;
 }
 
 .header-img img {
@@ -29,8 +29,9 @@ header {
 }
 
 .header-contents {
-  margin-left: 3rem;
-  text-align: center;
+  margin-top: 2rem;
+  margin-left: 12rem;
+  width: 100%;
 }
 
 .header-contents h3 {
@@ -78,38 +79,48 @@ header {
   transform: translateX(-0.5rem);
 }
 
+@media screen and (max-width: 1024px){
+  .header-container{
+    flex-direction: column;
+  }
+
+  .header-contents{
+    margin-left: 0;
+   margin-top: 2rem;
+  }
+}
 
 
 @media screen and (max-width: 600px) {
+  .header-container{
+    margin-top: 1rem;
+    flex-direction: column;
+  }
   .header-contents h3 {
     font-size: 1.6rem;
     margin-top: 1rem;
-
   }
-
+  
   .header-img {
-    width: 18rem;
-    height: 14rem;
-    max-width: 70%;
-
+   width: 100%;
   }
 
   .header-contents {
     width: 100%;
+    margin-top: 3rem;
+    margin-left: 0;
   }
-
   .header-cta {
     gap: 1rem;
   }
 
-  .header-contents {
-    margin-top: 0;
-  }
+ 
 
   .header-socials {
     display: none;
-
   }
-
+  .header-contents h3 {
+    font-size: 1.6rem;
+  }
 
 }
