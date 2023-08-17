@@ -42,7 +42,7 @@ body {
 
 section {
   background: var(--color-light);
-  padding: 10rem 0;
+  padding: 6rem 0;
   transition: var(--transition);
 }
 
@@ -135,7 +135,7 @@ img {
   }
 
   section {
-    padding: 8rem 0;
+    padding: 5rem 0;
   }
 
   section>p {

@@ -16,10 +16,13 @@ const Folio = () => {
             <div className="folio-contents">
               <div className="folio-image">
                 <img src={fit} alt="" /> 
-                <article>
-
-                </article>
               </div>
+              <article>
+                <p>
+                FITNESS
+                </p>
+                <small>Web development |React|CSS|API</small>
+                </article>
               <div className="folio-cta">
                   <a className=" btn primary" href="https://github.com/Kelly-kells/fit-fam" target='_blank'>Github</a>
                   <a className=' btn white' href="https://marchfitness.netlify.app" target='_blank'>Demo </a>
@@ -32,12 +35,17 @@ const Folio = () => {
               <div className="folio-contents">
                 <div className="folio-image">
                   <img src={ai} alt="" />
-
-                  <div className="folio-cta">
-                    <a className=" btn primary" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                    <a className=' btn white' href="https://marchfitness.netlify.app" target='_blank'>Demo </a>
-                  </div>
                 </div>
+                <article>
+                <p>
+                ARTIFICIAL INTELLIGENCE
+                </p>
+                <small>Web development |React|CSS|UI/UX</small>
+                </article>
+                <div className="folio-cta">
+                    <a className=" btn primary" href="https://github.com/Kelly-kells/Ai-project" target='_blank'>Github</a>
+                    <a className=' btn white' href="https://project-ai.netlify.app" target='_blank'>Demo </a>
+                  </div>
               </div>
             </div>
           </div>
@@ -49,9 +57,15 @@ const Folio = () => {
                 <div className="folio-image">
                   <img src={film} alt="" />
                 </div>
+                <article>
+                <p>
+               MOVIE SEARCH SITE
+                </p>
+                <small>Web development |React|CSS|API</small>
+                </article>
                 <div className="folio-cta">
-                    <a className=" btn primary" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                    <a className=' btn white' href="https://marchfitness.netlify.app" target='_blank'>Demo </a>
+                    <a className=" btn primary" href="https://github.com/Kelly-kells/movies" target='_blank'>Github</a>
+                    <a className=' btn white' href="https://filmore.netlify.app" target='_blank'>Demo </a>
                   </div>
               </div>
             </div>
@@ -62,12 +76,17 @@ const Folio = () => {
               <div className="folio-contents">
                 <div className="folio-image">
                   <img src={pot} alt="" />
-
-                  <div className="folio-cta">
-                    <a className=" btn primary" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
-                    <a className=' btn white' href="https://marchfitness.netlify.app" target='_blank'>Demo </a>
-                  </div>
                 </div>
+                <article>
+                <p>
+                RESTAURANT PAGE
+                </p>
+                <small>Web development |React|CSS|UI/UX</small>
+                </article>
+                <div className="folio-cta">
+                    <a className=" btn primary" href="https://github.com/Kelly-kells/African-spot" target='_blank'>Github</a>
+                    <a className=' btn white' href="https://african-pot.netlify.app" target='_blank'>Demo </a>
+                  </div>
               </div>
             </div>
           </div>

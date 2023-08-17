@@ -63,7 +63,7 @@ h2 {
     }
 
     .skills-content{
-        padding: 1rem;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1rem;
@@ -76,5 +76,6 @@ h2 {
 @media screen and (max-width: 600px){
     .skills-container{
         gap: 1rem;
+       
     }
 }

@@ -2,12 +2,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2px;
+  place-items: center;
   background-color: black;
  width: 100%;
- height: 100vh;
+ height: 100%;
+ padding: 1rem;
 }
 
+article{
+  color: white;
+  text-align: left;
+  margin-left: 2.5rem;
+  font-size: 1rem;
+}
 
+small{
+  color: var(--color-light);
+}
 
 .folio-image {
   padding: 1rem;
@@ -19,6 +30,7 @@
   height: 200px;
   width: 300px;
   border-radius: var(--border-radius-1);
+  object-fit: cover;
   
 }
 .folio-image img:hover{
@@ -35,3 +47,18 @@
 .folio-cta .btn{
   height: 30px;
 }
+
+@media screen and (max-width: 1024px){
+  .folio-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .folio-container{
+    grid-template-columns: 1fr;
+    
+  }
+}
+
+
