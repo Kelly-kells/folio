@@ -1,12 +1,27 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { HiMail } from "react-icons/hi"
 import { BsTwitter } from "react-icons/bs"
 import {AiFillLinkedin } from "react-icons/ai"
+
+import emailjs from '@emailjs/browser';
 
 
 import "./contact.css"
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section id='contact'>
       <h2> Get In Touch</h2>
@@ -34,11 +49,11 @@ const Contact = () => {
             <a href="https://twitter.com/KelechiKells" target='_blank'>Send a message</a>
           </article>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='Name' placeholder='Your Full Name' required />
           <input type="text" name='email' placeholder='Your Email' required />
           <textarea name="message"  rows="8" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn primary'>Send message</button>
+          <button type='submit'value="send" className='btn primary'>Send message</button>
         </form>
       </div>
 
