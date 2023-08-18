@@ -19,9 +19,10 @@
     border: 1px solid transparent;
     transition: var(--transition);
     margin: 0.1rem;
-    
+
 }
-.contact-option:hover{
+
+.contact-option:hover {
     transform: rotate(5deg);
 }
 
@@ -41,15 +42,40 @@
     font-size: 0.8rem;
 }
 
-.option-icon{
-   background-color: var(--color-primary);
-   font-size: 1.5rem;
-   margin-bottom: 0.5rem;
+.option-icon {
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary);
+    resize: none;
+    color: var(black);
+}
+
+/*====================MEDIA_QUERIES=======*/
+@media screen and (max-width: 1024px) {
+    .container.contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact-container {
+        width: 96%;
+    }
 }
