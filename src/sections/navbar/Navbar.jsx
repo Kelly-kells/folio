@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./navbar.css"
+import {GiHamburgerMenu} from "react-icons/gi"
 import logo from "../../assets/mylogo.png"
 import Data from './Data'
 
 const Navbar = () => {
 
-
+  const [isOpen, setIsOpen] = useState(false);
   const imageStyle = {
     width: '4rem',
     borderRadius: "15px"
@@ -16,9 +17,14 @@ const Navbar = () => {
         <a href="index.html" className='nav-logo'>
           <img src={logo} alt="" style={imageStyle} />
         </a>
-        <ul className='nav-menu'>
+    
+     <div className="menu-icon"  onClick={() => setIsOpen(!isOpen)}>
+      <GiHamburgerMenu/>
+    
+      </div>
+        <ul className={`nav-menu ${isOpen ? 'open mobile' : ''}`}>
       { 
-      Data.map(item=> <li key={item.id}><a href={item.link}>{item.title}</a></li>)
+      Data.map(item=> <li key={item.id}><a href={item.link} onClick={() => setIsOpen(false)}>{item.title}</a></li>)
       }
         </ul>
 

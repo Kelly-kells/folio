@@ -15,7 +15,7 @@ const Header = () => {
           <h3>FAVOUR KELECHI</h3>
           <p> An experienced frontend developer that is Committed to creating an accessible web, ensuring all developed features comply with industry standards and web accessibility guidelines.Creating web interfaces that adapt and function seamlessly across multiple devices and screen sizes, ensuring an optimal user experience.</p>
           <div className="header-cta">
-            <a href="#contact" className='btn primary'>Let's talk</a>
+            <a href="/Cv.pdf" download className='btn primary'>Resume</a>
             <a href="#portfolio" className='btn white'>My work</a>
           </div>
           <div className="header-socials">

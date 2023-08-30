@@ -1,6 +1,7 @@
 header {
   transition: var(--transition);
   margin-top: 8rem;
+  color:var(--color-white);
 }
 
 .header-container {
@@ -37,6 +38,8 @@ header {
 .header-contents h3 {
   font-size: 2rem;
   text-align: center;
+  color:var(--color-white);
+
 }
 
 .header-contents p {

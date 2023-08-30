@@ -7,7 +7,7 @@ import Services from "./sections/services/Services"
 import Folio from './sections/portfolio/Folio'
 import Contact from "./sections/contact/Contact"
 import Footer from "./sections/footer/Footer"
-import FloatingNav from "./sections/floating-nav/FloatingNav"
+
 
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
       <Folio/>
       <Contact/>
       <Footer/>
-      <FloatingNav/>
+     
     </main>
   )
 }
