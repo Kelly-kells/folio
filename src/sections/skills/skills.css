@@ -3,8 +3,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: center;
-    justify-items: center;
-
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -12,15 +12,12 @@
     background-color: var(--color-light);
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-primary);
-    height: fit-content;
     transition: var(--transition);
-
 }
 
 .skills:hover {
     background-color: var(--color-white);
     border: 2px solid var(--color-primary);
-
 }
 
 .skills-head {
@@ -36,16 +33,19 @@
     text-align: center;
 }
 
-.skills-content{
+.skills-content {
     padding: 2rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1.3rem;
-   
 }
-.skills-details{
+
+.skills-details {
     display: flex;
     gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
 }
 
 .icons {
@@ -59,27 +59,64 @@ h2 {
     text-align: center;
 }
 
+.percentage-container {
+    width: 100px;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
 
-@media screen and (max-width: 1024px){
-    .skills-container{
+.percentage-fill {
+    height: 10px;
+    background-color: var(--color-primary);
+    width: 0;
+    transition: var(--transition);
+}
+
+
+/*@media screen and (max-width: 1024px) {
+    .skills-container {
         grid-template-columns: 1fr 1fr;
-      
     }
 
-    .skills-content{
+    .skills-content {
         padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1rem;
     }
-
-
 }
 
 
-@media screen and (max-width: 600px){
-    .skills-container{
+  @media screen and (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
         gap: 1rem;
-       
+    }
+}*/
+@media screen and (max-width: 1024px) {
+    .skills-container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .skills-content {
+        padding: 0;
+        row-gap: 1rem;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+
+        max-width: 100%;
+        margin: 0 auto;
     }
 }

@@ -6,6 +6,7 @@
   list-style: none;
   text-decoration: none;
 
+
 }
 
 :root {
@@ -31,7 +32,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   font-size: 0.9rem;
-background-color: #2c0735;
+  background-color: #2c0735;
+
 
 }
 
@@ -45,6 +47,7 @@ section {
   background: var(--color-light);
   padding: 5rem 0;
   transition: var(--transition);
+  width: auto;
 }
 
 section:nth-child(even) {
@@ -98,11 +101,11 @@ img {
 .btn.white {
   background: var(--color-light);
   color: #7400b8;
- 
+
 }
 
 .btn.white:hover {
-  background: transparent;
+  background: var(--color-light);
   border-color: var(--color-primary);
   transition: var(--transition);
   transform: scale(1.01);
@@ -111,11 +114,11 @@ img {
 .btn.primary {
   background: var(--color-primary);
   color: white;
-  
+
 }
 
 .btn.primary:hover {
-  background: transparent;
+  background: var(--color-light);
   border-color: var(--color-primary);
   color: var(--color-primary);
   transform: scale(1.01);
